@@ -1,0 +1,30 @@
+{
+  "features": [
+    "FiO2_hrs_since",
+    "ICULOS",
+    "sirs_count",
+    "labs_measured_cum",
+    "HR_mean6",
+    "shock_index",
+    "Temp",
+    "Lactate_hrs_since",
+    "PaCO2_hrs_since",
+    "Alkalinephos",
+    "Unit1",
+    "Temp_max6",
+    "BUN",
+    "HospAdmTime",
+    "EtCO2_hrs_since"
+  ],
+  "threshold": 0.3748352527618408,
+  "xgboost_params": {
+    "subsample": 1.0,
+    "scale_pos_weight": 4.823569842476459,
+    "reg_lambda": 10,
+    "min_child_weight": 5,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "colsample_bytree": 0.5,
+    "n_estimators": 800
+  }
+}

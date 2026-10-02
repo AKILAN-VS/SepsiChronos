@@ -1,0 +1,6 @@
+Approach,Features,Val_ROC_AUC,Val_AUPRC
+Raw 40 features (Review 1 inputs),40,0.8276,0.1084
+All engineered (after correlation filter),119,0.829,0.1142
+Feature selection (top-k by XGBoost gain),15,0.8128,0.122
+PCA (95% variance) + XGBoost,71,0.7552,0.0738
+PCA (95% variance) + Logistic Regression,71,0.7304,0.0668

@@ -1,0 +1,4 @@
+Model,Qubits,Trainable_params,Fit_seconds,Accuracy,Precision,Recall,Specificity,F1,ROC_AUC,AUPRC,TN,FP,FN,TP
+VQC (quantum),4,12,346.19,0.499,0.0195,0.5833,0.4976,0.0376,0.5266,0.0179,2446,2470,35,49
+Logistic Regression,-,-,0.02,0.5182,0.0214,0.619,0.5165,0.0414,0.5961,0.0226,2539,2377,32,52
+Random Forest,-,-,0.82,0.416,0.0127,0.4405,0.4156,0.0247,0.3844,0.0125,2043,2873,47,37

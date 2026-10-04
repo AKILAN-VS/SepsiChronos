@@ -1,0 +1,7 @@
+Aspect,VQC (quantum),Classical
+Training data needed,Can work with very few rows (quantum state space grows fast with qubits),Generally needs more rows for the same qubit-equivalent feature count
+Training time (this run),"346s for 1000 rows, 150 iterations",Under 1s for both classical models
+Scalability,Limited on a classical simulator - doubles cost roughly every added qubit,Scales smoothly to millions of rows and hundreds of features (see Review 2)
+Interpretability,Low - circuit parameters have no direct clinical meaning,Random Forest gives feature importances; Logistic Regression gives coefficients
+Hardware needed,Simulated here; real hardware would add noise and queue time,Any laptop
+Result on this task,ROC-AUC 0.527 on the test set,ROC-AUC 0.384 (Random Forest) on the identical rows

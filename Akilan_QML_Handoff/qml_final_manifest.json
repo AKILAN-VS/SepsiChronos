@@ -1,0 +1,62 @@
+{
+    "project": "Time-Series Analysis and Early Warning of Sepsis in ICU Patients Using Smart Advanced Classifiers",
+    "qml_phases_completed": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "random_seed": 42,
+    "framework": {
+        "qiskit": "2.5.2",
+        "qiskit_machine_learning": "0.9.1",
+        "selected_classifier": "Variational Quantum Classifier (VQC)",
+        "simulation_strategy": "Exact statevector-based simulation"
+    },
+    "training": {
+        "rows": 1000,
+        "features": 4,
+        "unique_patients": 1000,
+        "class_0": 500,
+        "class_1": 500
+    },
+    "testing": {
+        "rows": 5000,
+        "features": 4,
+        "unique_patients": 5000,
+        "class_0": 4911,
+        "class_1": 89,
+        "positive_prevalence_percent": 1.78
+    },
+    "selected_features": [
+        "ICULOS",
+        "Resp",
+        "HR",
+        "MAP"
+    ],
+    "feature_selection": {
+        "methods": [
+            "Random Forest importance",
+            "Mutual Information",
+            "Logistic Regression coefficient magnitude",
+            "Consensus ranking",
+            "Spearman redundancy analysis",
+            "Original training-data missingness",
+            "Training-only 5-fold cross-validation"
+        ],
+        "final_feature_count": 4
+    },
+    "preprocessing": {
+        "scaler": "MinMaxScaler",
+        "fit_data": "Training data only",
+        "feature_range": "[0, pi]",
+        "clip": true,
+        "missing_values_after_preprocessing": 0
+    },
+    "patient_safety": {
+        "train_test_patient_overlap": 0,
+        "one_selected_hour_per_patient": true
+    },
+    "next_phase": "Phase 6 \u2014 Quantum Encoding using the supplied 4 model-ready scaled features."
+}

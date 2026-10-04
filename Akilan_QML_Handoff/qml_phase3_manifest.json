@@ -1,0 +1,26 @@
+{
+    "phase": 3,
+    "random_seed": 42,
+    "training": {
+        "rows": 1000,
+        "unique_patients": 1000,
+        "positive_rows": 500,
+        "negative_rows": 500,
+        "negative_from_septic_patients": 47,
+        "negative_from_nonseptic_patients": 453,
+        "positive_prevalence_percent": 50.0
+    },
+    "testing": {
+        "rows": 5000,
+        "unique_patients": 5000,
+        "positive_rows": 84,
+        "negative_rows": 4916,
+        "negative_from_septic_patients": 329,
+        "negative_from_nonseptic_patients": 4587,
+        "positive_prevalence_percent": 1.68
+    },
+    "feature_count": 40,
+    "sampling_method": "Patient-aware sampling with one hourly observation per selected patient and zero train/test patient overlap.",
+    "training_imbalance_strategy": "Balanced 50/50 training subset using genuine observations only; no SMOTE, synthetic samples, or duplicated positive rows.",
+    "testing_strategy": "Reduced test subset with 84 positive observations and 4916 negative observations, using the validated patient-aware sampling constraints."
+}

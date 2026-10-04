@@ -1,0 +1,44 @@
+{
+    "phase": 4,
+    "selected_feature_count": 4,
+    "selected_features": [
+        "ICULOS",
+        "Resp",
+        "HR",
+        "MAP"
+    ],
+    "selection_basis": [
+        "Random Forest feature importance",
+        "Mutual Information",
+        "Logistic Regression coefficient magnitude",
+        "Consensus ranking",
+        "Spearman redundancy analysis",
+        "Original training-data missingness",
+        "Training-only 5-fold cross-validation",
+        "QML qubit-efficiency consideration"
+    ],
+    "rationale": "The 4-feature subset retained essentially the same predictive performance as the 5- and 6-feature alternatives while requiring fewer quantum input dimensions/qubits. The selected features also showed relatively low original missingness and no strong redundancy.",
+    "candidate_comparison": {
+        "4_features": {
+            "Accuracy": 0.691,
+            "Precision": 0.7421,
+            "Recall": 0.594,
+            "F1": 0.6584,
+            "ROC_AUC": 0.7509
+        },
+        "5_features": {
+            "Accuracy": 0.69,
+            "Precision": 0.739,
+            "Recall": 0.594,
+            "F1": 0.6577,
+            "ROC_AUC": 0.7511
+        },
+        "6_features": {
+            "Accuracy": 0.69,
+            "Precision": 0.7417,
+            "Recall": 0.59,
+            "F1": 0.6561,
+            "ROC_AUC": 0.7507
+        }
+    }
+}
